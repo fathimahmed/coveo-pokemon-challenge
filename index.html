@@ -46,7 +46,7 @@
         <div class="CoveoFacet" data-title="Pokemon Generation" data-field="@pokemongeneration" data-tab="All"></div>
         <div class="CoveoFacetSlider" data-title="Pokemon Number" data-field="@pokemonnumber" data-tab="All"></div>
         <div class="CoveoFacet" data-is-multi-value-field='true' data-enable-toggling-operator='true' data-title="Pokemon Type" data-field="@pokemotype" data-tab="All"></div>
-        <div class="CoveoFacet" data-is-multi-value-field='true' data-enable-toggling-operator='true' data-title="Pokemon Weight" data-field="@pokemotype" data-tab="All"></div>
+        <div class="CoveoFacetSlider" data-title="Pokemon Weight" data-field="@pokemonweigh" data-tab="All"></div>
         
       </div>
       <div class="coveo-results-column">
@@ -74,8 +74,47 @@
        
         <div class="CoveoDidYouMean"></div>
         <div class="CoveoErrorReport"></div>
+       
         <div class="CoveoResultList" data-layout="list" data-wait-animation="fade" data-auto-select-fields-to-include="true">
+        <script id='MyTemplate' type='text/underscore'  class='result-template'> 
+<div class="coveo-result-frame">
+	<div class="coveo-result-cell" style="vertical-align:top;text-align:center;width:60px;">
+	<img width="50" height="50" src="<%- raw.pokemonimg %>"/>
+   	<div class="CoveoQuickview"></div>
+  </div>
+<div class="coveo-result-cell" style="vertical-align: top;padding-left: 16px;">
+<div class="coveo-result-row" style="margin-top:0;">
+      <div class="coveo-result-cell" style="vertical-align:top;font-size:16px;">
+	  <a class="CoveoResultLink"></a>
+      </div>
+      <div class="coveo-result-cell" style="width:120px;text-align:right;font-size:12px">
+        <div class="coveo-result-row">
+		<span class="CoveoFieldValue" data-field="@date" data-helper="date"></span>
         </div>
+      </div>
+    </div>
+	<div class="coveo-result-row" style="margin-top:10px;">
+      <div class="coveo-result-cell">
+	  <div class='my-excerpt'><%= raw.pokemondesc %></div>
+      </div>
+    </div>
+	<div class="coveo-result-row" style="margin-top:10px;">
+      <div class="coveo-result-cell">
+        
+        <span class="CoveoFieldValue coveo-with-label" data-field="@source" data-text-caption="Source" style="margin-right:30px;"></span>
+        <span class="CoveoFieldValue coveo-with-label" data-field="@language" data-text-caption="Language" style="margin-right:30px;"></span>
+        <span class="CoveoFieldValue coveo-with-label" data-field="@filetype" data-text-caption="File Type" style="margin-right:30px;"></span>
+      </div>
+    </div>
+	<div class="coveo-result-row" style="margin-top:10px;">
+      <div class="coveo-result-cell">
+        <div class="CoveoPrintableUri"><a class="CoveoResultLink coveo-printable-uri-part" title="https://pokemondb.net/pokedex/bulbasaur" tabindex="0" href="https://pokemondb.net/pokedex/bulbasaur">https://pokemondb.net/.../bulbas...</a></div>
+      </div>
+    </div>
+</div>
+</div>
+        </script>
+      </div>
         <div class="CoveoResultList" data-layout="card" data-wait-animation="fade" data-auto-select-fields-to-include="true"></div>        
         <div class="CoveoPager"></div>
         <div class="CoveoLogo"></div>
