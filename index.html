@@ -46,7 +46,7 @@
         <div class="CoveoFacet" data-title="Pokemon Generation" data-field="@pokemongeneration" data-tab="All"></div>
         <div class="CoveoFacetSlider" data-title="Pokemon Number" data-field="@pokemonnumber" data-tab="All"></div>
         <div class="CoveoFacet" data-is-multi-value-field='true' data-enable-toggling-operator='true' data-title="Pokemon Type" data-field="@pokemotype" data-tab="All"></div>
-        <div class="CoveoFacetSlider" data-title="Pokemon Weight" data-field="@pokemonweigh" data-tab="All"></div>
+        <div class="CoveoFacetSlider" data-title="Pokemon Weight(KG)" data-field="@pokemonweigh" data-tab="All"></div>
         
       </div>
       <div class="coveo-results-column">
@@ -95,7 +95,7 @@
     </div>
 	<div class="coveo-result-row" style="margin-top:10px;">
       <div class="coveo-result-cell">
-	  <div class='my-excerpt'><%= raw.pokemondesc %></div>
+	  <div class='my-excerpt'><%= raw.pokemondescription %></div>
       </div>
     </div>
 	<div class="coveo-result-row" style="margin-top:10px;">
@@ -115,7 +115,7 @@
 </div>
         </script>
       </div>
-        <div class="CoveoResultList" data-layout="card" data-wait-animation="fade" data-auto-select-fields-to-include="true"></div>        
+                
         <div class="CoveoPager"></div>
         <div class="CoveoLogo"></div>
         <div class="CoveoResultsPerPage"></div>
