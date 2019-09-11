@@ -1,8 +1,12 @@
 .CoveoHelloWorld {
+height: 124px;
+    background-color: #727272;
+    background-image: linear-gradient(#3b3b3b, #202020);
    
  background-image: url(https://img.pokemondb.net/design/header2018z-md.png);
  background-position: center 0;
  background-repeat: no-repeat;
+ 
 display: block;
     height: 130px;
     text-indent: -9999px

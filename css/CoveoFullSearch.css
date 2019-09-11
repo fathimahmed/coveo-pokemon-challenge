@@ -344,6 +344,7 @@
   margin-right: 2.84259%;
   width: 28.01019%;
   padding: 5px 15px;
+  background: #f5f8f9;
 }
 
 .CoveoSearchInterface .coveo-facet-column:last-child {
@@ -15637,7 +15638,7 @@ a.coveo-folding-show-less.coveo-selected * {
 .coveo-tab-section {
   width: 100%;
   min-height: 52px;
-  background-color: #f7f8f9;
+  background-color:##f5f8f9;
   text-align: center;
   border-bottom: 1px solid #bcc3ca;
   font-size: 0;
